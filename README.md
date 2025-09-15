@@ -15,7 +15,7 @@ I'm using this repo to practice Python basics, these include:
 - Loops and conditions
 - Functions
 - Data structures
-- Error & Execptions
+- Error & Exceptions
 - Modules & Imports
 
 
