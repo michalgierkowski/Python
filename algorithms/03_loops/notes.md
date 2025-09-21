@@ -8,7 +8,7 @@ Read an integer `n`. Print the square of each non-negative integer less than `n`
 **Attempt 1**
 Follow "Attempt 1" in solution.py
 
-First attempt:
+First attempt (incorrect):
 - Hard-coded list [0,1,2,3,4] this meant that it would only when n = 5
 - Any other input than 5 = fails
 - if i < n --> is unnecesary 
