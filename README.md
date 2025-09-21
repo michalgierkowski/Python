@@ -11,13 +11,13 @@ This repo contains my Python practice problems and beginner - intermediate proje
 
 
 ## Purpose
-I'm using this repo to practice Python basics, these include:
-- Variables and data types
-- Loops and conditions
+I’m using this repo to practice Python fundamentals, which include:
+- Variables and Data Types
+- Loops and Conditional Statements
 - Functions
-- Data structures
-- Error & Exceptions
-- Modules & Imports
+- Data Structures and Algorithms
+- Errors and Exceptions
+- Modules and Imports
 
 
 These files are a part of my learning journey to build a strong understanding of Python.
