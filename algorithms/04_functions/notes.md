@@ -1,6 +1,6 @@
 # Leap Year
 
-**Source:** [HackerRank – Write a Function] - (https://www.hackerrank.com/challenges/write-a-function/problem)
+**Source:** [HackerRank – Write a Function](https://www.hackerrank.com/challenges/write-a-function/problem)
 
 **Goal:**  
 Determine if a given year is a leap year using Gregorian calendar rules.
