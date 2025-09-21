@@ -1,4 +1,4 @@
-# Attempt 1
+# Attempt 1 (incorrect)
 if __name__ == '__main__':
     n = int(input())
     
