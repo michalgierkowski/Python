@@ -7,7 +7,7 @@ This repo contains my Python practice problems and beginner - intermediate proje
 ## Structure
 - **practice-problems/** -> raw practice files (exercises with comments + code I've written)
 - **projects/** -> clean scripts (password analyzer, password manager or log parser)
-- **algorithms** -> problem-solving tasks that focus on logic, does not include not full apps.
+- **algorithms/** -> problem-solving tasks that focus on logic, does not include not full apps.
 
 
 ## Purpose
