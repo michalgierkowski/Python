@@ -7,8 +7,7 @@ This repo contains my Python practice problems and beginner - intermediate proje
 ## Structure
 - **practice-problems/** -> raw practice files (exercises with comments + code I've written)
 - **projects/** -> clean scripts (password analyzer, password manager or log parser)
-- **algorithms/** -> problem-solving tasks that focus on logic, does not include not full apps.
-- **flowcharts-practice/** -> breaking down tasks into smaller tasks, practicing computational thinking
+- **algorithms/** -> problem-solving tasks that focus on logic, includes flowcharts.
 
 ## Purpose
 I’m using this repo to practice Python fundamentals, which include:
