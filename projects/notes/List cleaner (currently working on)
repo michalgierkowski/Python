@@ -47,5 +47,7 @@ What we are doing is looping through the list backwards, checking if it's a stri
 If it's true we remove the element using .pop and add our "index" variable which starts from last position and stops at first position taking 1 step backwards (start, stop, step).
 
 Example of what was happening previously:
-E.g. values = ("1","2","3","4") checks "1" and removes but now "2" is in index pos 0 and 3 is in index pos 1 (pointers next check) 
-So it checks "3" but skips "2" leaving it in the list as a result of iteration fowards.
+values = ("1","2","3","4") checks "1" and removes but now "2" is in index 0 and 3 is in index 1 - due to list shifting left
+index -->  0   1   2   3
+The next check for the pointer is index 1 which now holds element of 3 
+It checks "3" but skips "2" leaving it in the list, this is the result of fowards iteration.
