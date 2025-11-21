@@ -1,26 +1,6 @@
 # list to store user values
 values = []
 
-# Input 1
-# Using expections allocates more memory
-# Causes code to be slower and less efficient
-# And less readable
-#while True:
-    #try:
-        #userInput = int(input("""Would you like to enter:
-    #1. Text
-    #2. Number
-    #Your choice -->  """))
-        #break
-    #except ValueError:
-        #print("You did not enter a valid input.")
-
-# Input 2 
-# Writing code with less expection
-# Makes it more efficient than Input 1
-# And readable
-
-
 # A function that checks our tuple and looks for matches
 # if no match --> returns a output
 # if a match is found --> returns users input which goes to the next "checks"
@@ -32,7 +12,7 @@ def checkUserInput(user):
 
 while True: 
     userInput = input("Choose from the following: \n" 
-    "1. Store a string \n"
+    "1. Store a word \n"
     "2. Store a number \n"
     "3. View next page \n"
     "Enter here:  ")
@@ -42,7 +22,7 @@ while True:
 
     if userInput == "1":
         # a string can involve numeric or alphabetical units
-        text = input("Enter a string of your choice:  ")
+        text = input("Enter a word of your choice:  ")
         print(f"'{text}' has been successfully stored.")
         values.append(text)
 
@@ -62,31 +42,40 @@ while True:
     elif userInput == "3":
         break
 
-
 while True: 
     userRequest = input("Would you like to:\n" 
-        "1. View only strings?\n"
+        "1. View only words?\n"
         "2. View only numbers?\n"
-        "3. View both?\n"
-        "Select your option -->  ")
+        "3. View your list?\n"
+        "Select your option -->   ")
 
     # calling our function again
     checkUserInput(userRequest)
 
     if userRequest == "1":
-        for value in values:
-            if value == str(value):
-                print(value)
-                
+        print("Your list of words:")
+        for string in values:
+            if isinstance(string, int):
+                values.remove(string)
+            print(f"- {string}") 
+        break
+    
 
+    # finish this + new list to insert values from ascending order
     elif userRequest == "2":
+        for index in range(len(values) - 1, -1, -1):
+            if isinstance(values[index], str):
+                values.pop(index)         #.pop() is for removing a element based on it's position     
+
+
+
+            
+    elif userRequest == "3":
+        print("Your list:")
         for value in values:
-            if value == int(value):
-                print(value)
-                
-
-
-
-# finish the last "would you like to" steps 
-# Clean up code, add any "errors handling" with minimizing memory allocation keeping it clean and readable
+            print(f"- {value}")
+        break
+            
+# Working on
+# finish code - write up notes/review - upload fully to github (give it a name e.g.)
 

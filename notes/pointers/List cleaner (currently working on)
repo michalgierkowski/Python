@@ -1,0 +1,51 @@
+# Code 1 - Input
+Using expections allocates more memory causes code to be slower and less efficient
+The code as well looks more messy when all I'm asking for is a simple input
+#while True:
+    #try:
+        #userInput = int(input("""Would you like to enter:
+    #1. Text
+    #2. Number
+    #Your choice -->  """))
+        #break
+    #except ValueError:
+        #print("You did not enter a valid input.")
+
+
+# Code 2 - Foward iteration issue
+
+    elif userRequest == "2":
+        smallest = values[0]
+        ascendingOrder = []
+
+
+        for nonInt in values:           
+            if nonInt == str(nonInt):   - it's better to use isinstance() 
+                values.remove(nonInt)
+       
+
+        for number in values:
+            if smallest < number:
+                smallest = number
+                ascendingOrder.append(smallest)
+        print(ascendingOrder)
+        break
+
+I wanted to go through it and remove each element one by one with a for loop it wouldn't work, why?
+
+When using a for loop, I remove a element of current pointer position which causes list to shift to the left
+This lead to the pointer being one position foward and skipping the element we wanted to check
+
+Solution code (not finished): 
+
+    elif userRequest == "2":
+        for index in range(len(values) - 1, -1, -1):
+            if isinstance(values[index], str):
+                values.pop(index)  - .pop() is for removing a element based on it's index/position
+
+What we are doing is looping through the list backwards, checking if it's a string 
+If it's true we remove the element using .pop and add our "index" variable which starts from last position and stops at first position taking 1 step backwards (start, stop, step).
+
+Example of what was happening previously:
+E.g. values = ("1","2","3","4") checks "1" and removes but now "2" is in index pos 0 and 3 is in index pos 1 (pointers next check) 
+So it checks "3" but skips "2" leaving it in the list as a result of iteration fowards.
