@@ -49,5 +49,4 @@ If it's true we remove the element using .pop and add our "index" variable which
 Example of what was happening previously:
 values = ("1","2","3","4") checks "1" and removes but now "2" is in index 0 and 3 is in index 1 - due to list shifting left
 index -->  0   1   2   3
-The next check for the pointer is index 1 which now holds element of 3 
-It checks "3" but skips "2" leaving it in the list, this is the result of fowards iteration.
+The next check for the pointer is index 1 which now holds element of 3, it checks "3" but skips "2" leaving it in the list, this is the result of fowards iteration.
